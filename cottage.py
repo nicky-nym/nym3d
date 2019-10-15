@@ -17,8 +17,7 @@ from compass_facing import CompassFacing as Facing
 from place import Place
 from plato import Plato
 
-# Feet: all measurements are in feet
-
+# in feet
 PARCEL_DY = 50
 PARCEL_X0_NORTH = -232.72
 PARCEL_X0_SOUTH = -224.15
@@ -188,7 +187,7 @@ class Cottage:
 
     def add_street(self, count: int=5):
         """Tell plato about the street the cottages are on."""
-        self._plato.hurry(count > 1)
+        # self._plato.hurry(count > 1)
 
         STREET_DX = 15
         STREET_DY = count * PARCEL_DY
@@ -205,6 +204,7 @@ class Cottage:
                   (SIDEWALK_WIDTH + STREET_DX, STREET_DY, -CURB_HEIGHT),
                   (SIDEWALK_WIDTH + STREET_DX, 0, -CURB_HEIGHT)]
 
+        self._plato.goto(x=0, y=0)
         self._plato.add_place(Place.WALKWAY, shape=SIDEWALK)
         CURB = [(SIDEWALK_WIDTH, 0, -CURB_HEIGHT),
                 (SIDEWALK_WIDTH, STREET_DY, -CURB_HEIGHT)]
