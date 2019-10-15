@@ -46,7 +46,7 @@ COLORS_OF_PLACES = {
 }
 
 
-def _rotate(xyz, facing: Facing):
+def rotate(xyz, facing: Facing):
     (x, y, z) = xyz
     if facing == Facing.NORTH:
         return (x, y, z)
@@ -69,7 +69,7 @@ def _rotate(xyz, facing: Facing):
         return (-y, x, z)
 
     else:
-        raise Exception("bad compass facing in plato._rotate(): " + str(facing.value))
+        raise Exception("bad compass facing in plato.rotate(): " + str(facing.value))
 
 
 def _material_by_place(place: Place):
@@ -114,13 +114,15 @@ class Plato:
         self._hurry = hurry
         return self
 
-    def study(self, topic: str=""):
+    def study(self, topic: str="", x0: Num=0, y0: Num=0):
         self._topic = topic
         self._square_feet = {}
+        self._x0 = x0
+        self._y0 = y0
 
     def goto(self, *, x: Num=0, y: Num=0, z: Num=0, facing: Facing=Facing.NORTH):
-        self._x = x
-        self._y = y
+        self._x = self._x0 + x
+        self._y = self._y0 + y
         self._z = z
         self._facing = facing
         # print("  goto: ({:,.0f},{:,.0f},{:,.0f})".format(x, y, z))
@@ -161,7 +163,7 @@ class Plato:
         return obj
 
     def _new_vert(self, xyz: Xyz):
-        xyz = _rotate(xyz, self._facing)
+        xyz = rotate(xyz, self._facing)
         dxyz = (self._x, self._y, self._z)
         xyz = nudge(xyz, dxyz=dxyz)
         self._bmesh.verts.new(xyz)
@@ -266,13 +268,13 @@ class Plato:
             parcel_far = floor / parcel
             urban_far = floor / (parcel + street)
             print("")
-            print("  Parcel FAR: {:,.2f} floor area ratio".format(parcel_far))
-            print("  Urban  FAR: {:,.2f} floor area ratio".format(urban_far))
+            print("  Parcel FAR:   {:,.2f} floor area ratio".format(parcel_far))
+            print("  Citywide FAR: {:,.2f} floor area ratio".format(urban_far))
 
         proximity = 0
-        propinquity = 0
-        print("  Proximity: {:,.2f} ???".format(proximity))
-        print("  Propinquity: {:,.2f} ???".format(propinquity))
+        megastokes = 0
+        print("  Proximity: {:,.2f} ??? square-meters per meter".format(proximity))
+        print("  Kinematic Fluidity: {:,.2f} ??? megaStokes (MSt)".format(megastokes))
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         return self
 
