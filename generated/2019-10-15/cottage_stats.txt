@@ -1,0 +1,17 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cottage(s) floor area
+
+  WALKWAY: 6,210 square feet
+  WALL: 88,373 square feet
+  STREET: 36,528 square feet
+  PARCEL: 137,061 square feet
+  BARE: 38,293 square feet
+  ROOM: 22,531 square feet
+  ROOF: 25,533 square feet
+
+  Parcel FAR:   0.16 floor area ratio
+  Citywide FAR: 0.13 floor area ratio
+  Proximity: 0.00 ??? square-meters per meter
+  Kinematic Fluidity: 0.00 ??? megaStokes (MSt)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

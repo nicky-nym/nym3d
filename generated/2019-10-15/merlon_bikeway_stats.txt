@@ -1,0 +1,32 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Merlon Buildings floor area
+
+  WALKWAY: 84,190 square feet
+  PARCEL: 143,424 square feet
+  ROOM: 594,144 square feet
+  WALL: 246,268 square feet
+  BARE: 105,223 square feet
+  ROOF: 158,509 square feet
+
+  Parcel FAR:   4.14 floor area ratio
+  Citywide FAR: 4.14 floor area ratio
+  Proximity: 0.00 ??? square-meters per meter
+  Kinematic Fluidity: 0.00 ??? megaStokes (MSt)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Bikeways floor area
+
+  PARCEL: 4,600,800 square feet
+  BARE: 248,400 square feet
+  BIKEPATH: 722,273 square feet
+  WALL: 760,176 square feet
+  ROOM: 1,274,400 square feet
+  WALKWAY: 167,843 square feet
+
+  Parcel FAR:   0.28 floor area ratio
+  Citywide FAR: 0.28 floor area ratio
+  Proximity: 0.00 ??? square-meters per meter
+  Kinematic Fluidity: 0.00 ??? megaStokes (MSt)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

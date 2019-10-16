@@ -1,0 +1,16 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Manhattan New York floor area
+
+  PARCEL: 3,840,000 square feet
+  ROOM: 123,670,000 square feet
+  WALL: 52,327,600 square feet
+  ROOF: 3,840,000 square feet
+  STREET: 1,059,840 square feet
+  WALKWAY: 870,400 square feet
+
+  Parcel FAR:   32.21 floor area ratio
+  Citywide FAR: 25.24 floor area ratio
+  Proximity: 0.00 ??? square-meters per meter
+  Kinematic Fluidity: 0.00 ??? megaStokes (MSt)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
