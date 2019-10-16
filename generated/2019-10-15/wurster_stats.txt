@@ -1,0 +1,14 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Wurster Hall(s) floor area
+
+  PARCEL: 194,400 square feet
+  ROOM: 230,739 square feet
+  WALL: 170,068 square feet
+  ROOF: 46,861 square feet
+
+  Parcel FAR:   1.19 floor area ratio
+  Citywide FAR: 1.19 floor area ratio
+  Proximity: 0.00 ??? square-meters per meter
+  Kinematic Fluidity: 0.00 ??? megaStokes (MSt)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
