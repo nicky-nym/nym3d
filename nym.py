@@ -48,7 +48,7 @@ if True:
     cottage.add_street(12)
     plato.pontificate()
 
-    CITY_SIZE = 4
+    CITY_SIZE = 2
     plato.study("Manhattan New York", x0=-800*CITY_SIZE, y0=-600*CITY_SIZE)
     nyc = Manhattan(plato)
     nyc.add_blocks(CITY_SIZE, CITY_SIZE*2)
